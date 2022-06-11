@@ -2,11 +2,15 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Technologies](#technologies)
-* [Setup](#setup)
-* [Lexer](#lexer)
-* [Parser](#parser)
-* [Code generator](#code_generator)
+* [Tools and Technologies Used](#Tools and Technologies Used)
+* [Use](#Use)
+* [Features and Requirments](#Features and Requirments)
+* [Setup](#Setup)
+* [General overview](#General overview)
+* [Project Structure](#Project Structure)
+* [Interface Description](#Interface Description)
+* [Program guide](#Program guide)
+
 
 ## General info
 
@@ -74,15 +78,56 @@ There are several algorithms for finding the shortest path between two nodes. On
 - transmission route.
 
 
-## Lexer
+## Project Structure
+
+The program code is divided into functional-program parts and placed in appropriate files that emulate the work of the MVC template (model-look-controller), which divides the program into three logical and interconnected blocks, which allows you to organize the structure for more intuitive text design and simplification further modification of the program. Classes are the internal object base.
+
+![Structure model](./imgs/structure_model.png)
 
 
+The conceptual model of a software product depicts the file structure of a program through the relationships between its modules. Thus, the input file that starts the program is the module Program.cs, which refers to the file application_view.cs, which in turn contains elements of modules such as algorithm_model.cs and graphick_control.cs, each of which includes the module data_object .cs. These software blocks are designed to perform the following functions:
 
-## Parser
+* Program.cs - launches the main program, enables visual styles, connects to .NET frameworks and supports older versions, and launches the standard form.
+* Application_view.cs - implements the graphical interface of the program and provides an image of the main working background of the software product to the user, which allows you to manipulate the graphical elements of the program and perform all the defined functionality.
+* Graphick_controller.cs - is responsible for creating graphical elements of the program and is constantly tracking all possible actions that would change the displayed information and in turn display the current state of the program.
+* Algorithm_model.cs - is responsible for the logical interpretation of data, performing the function of calculating the shortest paths of the graph according to the Dijkstra algorithm, finding the weight between nodes, conducting a packet path with timely splitting and message collection using datagram or virtual channel method.
+* Data_objects.cs - is a repository of all newly created data structures, which are grouped into appropriate structures and are responsible for determining the basic building blocks of the program in the form of routers, workstations and connections between them.
 
 
+# Interface Description
 
+The graphical interface is a set of three windows: a network menu consisting of toolbars for manipulating the object part of the program, a work area for displaying the corresponding dynamic elements and a main panel containing buttons with functions to save and load created networks and display relevant control information.
 
-## Code generator
+![Interface screenshot](./imgs/interface.jpg)
+
+1. Network menu - this area consists of three submodules: "New York menu" - "Network menu", "Search algorithms" - "Search algorithms", "Packet transfer" - "Packet transfer". The network menu includes counters of nodes and connections, which are located immediately under the name "Nodes" and "Relations", respectively. The "Clear" button is responsible for completely clearing the work area of ​​objects. The “New node” button creates a new node in the work area after clicking the left mouse button, the “New station” button creates a new station, the “Del node” button deletes the corresponding node or station after selecting it, the “Make relation” button creates a connection between nodes or stations after the selection of these objects. The "Del relation" button allows you to delete the created relationship between the objects on the canvas after successively clicking on the corresponding elements.
+2. Main panel - the area contains four or three functional elements. The "Save" button opens a panel that allows you to specify the path to save the file and its name. The “Load” button opens a panel that allows you to select the appropriate file and upload the appropriate network structure to the work area. The "X" button allows you to end the program. There is an empty zone from the cluster of buttons designed to display instructions and additional information after clicking the appropriate buttons in the network menu.
+3. Workspace - allows you to create graphic objects with the mouse and control their location and status according to the actions taken by the user.
+
+![Interface screenshot detailed](./imgs/panels_interface.jpg)
+
+## Program guide
+
+Consider the procedure that must be performed to create a network in this software product.
+
+To create the desired network structure, which contains 4 nodes and 3 stations, you must first click "New node", which will change the background of this element to red, which means that at the moment in the work area will be active function of adding new nodes , which is a property of each button, except for the "Clear" element, which immediately fulfills its purpose. To disable this feature, either switch to another mode and activate another state, or press the same object again. When you click on the free areas of the work area 4 times, clickable nodes will appear on the screen.
+
+Then go to the mode of adding stations by clicking on the button "New station" and add 3 stations, performing a similar sequence of operations. The last pressed item is painted green. The node is indicated by a gray circle with the element number inside, the station is an object connected by two rectangles of different shades of gray with the sequence number shown in the figure below.
+
+The next step is to add connections between stations and nodes. Click on the "Make relations" button and pay attention to the panel that opens at the bottom of the network menu. The drop-down list located in the upper left corner of the panel contains the values ​​of the weights of the elements that will be given to the created links. The "Random" checkbox indicates the function of assigning random weights to relationships among the specified values. The “Duplex” and “Half-duplex” radio buttons indicate the type of connection, assigning a duplex or half-duplex type, respectively. The duplex type is indicated by a straight fixed line, and the half-duplex type is represented by a dashed line of dark blue color. The "auto" check box indicates the mode for automatically linking items. When the flag is positive, you can connect free items continuously until there are no free items left. Otherwise, after adjusting the connection parameters, you should press the "Approve" button, which will allow you to connect the two elements. At the same time, the panel itself will disappear and the mode will go into standby mode, changing the color of the “Make relation” button to yellow. Reactivating this feature will require you to press this button again. As a result, we obtain the following graph.
+
+![Graph](./imgs/graph.jpg)
+
+In order to find the shortest paths according to the distributed routing algorithm, you need to select the path mode with the shortest length by clicking on the "Least time" button and the path mode that takes the least number of transit nodes. Then you need to click on a specific station, because if you select a network node in the main panel will display the corresponding error. The work area will display a table (Fig. 7), which will contain information about each path, as the sending and receiving station in the column "Search", the length of the path in the column "Length", the path in the column "Path" and the number of elements involved in column "Nodes_num". There are also two "Hide table" and "Close table" buttons in the title menu. The first is responsible for collapsing the table, after clicking which its text changes to "Show table" with the acquisition of the function of expanding this list. The “Close table” button completely closes the table.
+
+![Table path](./imgs/table.jpg)
+
+Selecting the corresponding line by left-clicking will highlight the corresponding path by coloring the elements in blue and light orange links.
+
+![Highlighted path](./imgs/highlighted_path.png)
+
+Activating the packet transmission mode allows you to send messages in two ways: datagram and virtual channel creation. The first method becomes available after pressing the "Datagram" button, the second method after pressing the "Virtual" button.
+
+![Packet transfer menu](./imgs/packet_transfer.jpg)
 
 
