@@ -2,14 +2,14 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Tools and Technologies Used](#Tools and Technologies Used)
+* [Tools and Technologies Used](#Tools-and-Technologies-Used)
 * [Use](#Use)
-* [Features and Requirments](#Features and Requirments)
+* [Features and Requirments](#Features-and-Requirments)
 * [Setup](#Setup)
-* [General overview](#General overview)
-* [Project Structure](#Project Structure)
-* [Interface Description](#Interface Description)
-* [Program guide](#Program guide)
+* [General overview](#General-overview)
+* [Project Structure](#Project-Structure)
+* [Interface Description](#Interface-Description)
+* [Program guide](#Program-guide)
 
 
 ## General info
