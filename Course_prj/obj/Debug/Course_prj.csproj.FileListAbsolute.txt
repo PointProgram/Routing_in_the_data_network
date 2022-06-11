@@ -1,0 +1,10 @@
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\bin\Debug\Course_prj.exe.config
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\bin\Debug\Course_prj.exe
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\bin\Debug\Course_prj.pdb
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\obj\Debug\Course_prj.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\obj\Debug\Course_prj.Properties.Resources.resources
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\obj\Debug\Course_prj.csproj.GenerateResource.cache
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\obj\Debug\Course_prj.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\obj\Debug\Course_prj.exe
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\obj\Debug\Course_prj.pdb
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Course_prj\Course_prj\obj\Debug\Course_prj.application_view.resources

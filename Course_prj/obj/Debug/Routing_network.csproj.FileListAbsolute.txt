@@ -1,0 +1,9 @@
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\bin\Debug\Course_prj.exe.config
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\bin\Debug\Course_prj.exe
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\bin\Debug\Course_prj.pdb
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\obj\Debug\Course_prj.application_view.resources
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\obj\Debug\Course_prj.Properties.Resources.resources
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\obj\Debug\Routing_network.csproj.GenerateResource.cache
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\obj\Debug\Routing_network.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\obj\Debug\Course_prj.exe
+C:\Users\ThinkPad\Dropbox\My PC (Vasyl)\Desktop\Study_group\4_course\Course_prj\Course_prj\obj\Debug\Course_prj.pdb
